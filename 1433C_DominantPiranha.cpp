@@ -1,6 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#include<vector>
+
 using namespace std;
 
 int main()
@@ -12,14 +12,55 @@ int main()
     {
         int n;
         cin>>n;
-        vector<int> a[n];
+        int a[n];
+        int d[n];
+        int ptr=0;
 
         for(int i=0;i<n;i++)
-        {int x;
-        cin>>x;
-            a.push_back(x);
-        
+        {
+            cin>>a[i];
+            
         }
+        int count=0;
+        for(int i=0;i<n-1;i++)
+        {
+            if(a[i]==a[i+1])
+            {
+                count++;
+
+            }
+
+        }
+        if(count==n-1)
+        {
+            cout<<-1;
+            break;
+        }
+       
+        int pt=0;
+
+        for(int i=1;i<n-1;i++)
+        {
+           if(a[i]<a[i+1] && a[i]<a[i-1])
+           {
+            if(a[i+1]>a[i-1])
+            {
+                pt=i+1;
+                break;            
+            }
+            else
+            {
+                pt=i-1;
+                break;
+            }
+
+
+           }
+
+        }
+        cout<<pt+1;
+        
+        
 
     }
 }
