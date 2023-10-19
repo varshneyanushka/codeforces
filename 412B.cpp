@@ -21,7 +21,4 @@
         sort(arr,arr+n);
         cout<<arr[n-k]<<endl;
         return 0;
-
-
-    
     }
