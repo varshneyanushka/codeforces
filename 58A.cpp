@@ -1,81 +1,34 @@
 #include<iostream>
+#include<string>
 
 using namespace std;
+
 void solve()
 {
     string s;
-    cin>>s;
-    int ptr;
-    for(int i=0;i<s.length();i++)
+    cin >> s;
+    
+    char chars[] = {'h', 'e', 'l', 'l', 'o'};
+    int charIndex = 0;
+    
+    for (char c : s)
     {
-        if(s.find("h")<s.length())
+        if (c == chars[charIndex])
         {
-            s.erase(s.begin()+i);
-            continue;
+            charIndex++;
         }
-        else
+        
+        if (charIndex == 5)
         {
-            cout<<"NO"<<endl;
+            cout << "YES" << endl;
             return;
         }
     }
-    for(int i=0;i<s.length();i++)
-    {
-       if(s.find("e")<s.length())
-        {
-            s.erase(s.begin()+i);
-            continue;
-        }
-        else
-        {
-            cout<<"NO"<<endl;
-            return;
-        }
-    }
-    for(int i=0;i<s.length();i++)
-    {
-        if(s.find("l")<s.length())
-        {
-            s.erase(s.begin()+i);
-            continue;
-        }
-        else
-        {
-            cout<<"NO"<<endl;
-            return;
-        }
-    }
-    for(int i=0;i<s.length();i++)
-    {
-       if(s.find("l")<s.length())
-        {
-            s.erase(s.begin()+i);
-            continue;
-        }
-        else
-        {
-            cout<<"NO"<<endl;
-            return;
-        }
-    }
-    for(int i=0;i<s.length();i++)
-    {
-       if(s.find("o")<s.length())
-        {
-            s.erase(s.begin()+i);
-            continue;
-        }
-        else
-        {
-            cout<<"NO"<<endl;
-            return;
-        }
-    }
-    cout<<"YES"<<endl;
-    return;
+    
+    cout << "NO" << endl;
 }
-int main()
 
+int main()
 {
    solve();
 }
