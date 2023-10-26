@@ -1,0 +1,13 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/anushkavarshney/Documents/code/GITHUB/coding_practice/codeforces/output/25A'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x10000396C, symSize: 0x374 }
+  - { offsetInCU: 0x445C, offset: 0x445C, size: 0x8, addend: 0x0, symName: __ZNSt3__14endlB7v160006IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_, symObjAddr: 0x3CC, symBinAddr: 0x100003D38, symSize: 0x58 }
+  - { offsetInCU: 0x449C, offset: 0x449C, size: 0x8, addend: 0x0, symName: __ZNSt3__19use_facetB7v160006INS_5ctypeIcEEEERKT_RKNS_6localeE, symObjAddr: 0x4B0, symBinAddr: 0x100003E1C, symSize: 0x2C }
+  - { offsetInCU: 0x6D51, offset: 0x6D51, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x10000396C, symSize: 0x374 }
+  - { offsetInCU: 0x6EE6, offset: 0x6EE6, size: 0x8, addend: 0x0, symName: __ZNSt3__19basic_iosIcNS_11char_traitsIcEEE3tieB7v160006EPNS_13basic_ostreamIcS2_EE, symObjAddr: 0x374, symBinAddr: 0x100003CE0, symSize: 0x2C }
+  - { offsetInCU: 0x6F2A, offset: 0x6F2A, size: 0x8, addend: 0x0, symName: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsB7v160006EPFRS3_S4_E, symObjAddr: 0x3A0, symBinAddr: 0x100003D0C, symSize: 0x2C }
+  - { offsetInCU: 0x6F5C, offset: 0x6F5C, size: 0x8, addend: 0x0, symName: __ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB7v160006Ec, symObjAddr: 0x424, symBinAddr: 0x100003D90, symSize: 0x8C }
+  - { offsetInCU: 0x6FC8, offset: 0x6FC8, size: 0x8, addend: 0x0, symName: __ZNKSt3__15ctypeIcE5widenB7v160006Ec, symObjAddr: 0x4DC, symBinAddr: 0x100003E48, symSize: 0x38 }
+...
